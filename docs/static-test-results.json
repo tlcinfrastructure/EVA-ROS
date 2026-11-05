@@ -1,0 +1,10 @@
+{
+  "python_and_bash_syntax": "PASS",
+  "asset_validation": "PASS",
+  "default_dry_run_and_apply_refusal": "PASS",
+  "restore_original_or_original_absence_in_temp_only": "PASS",
+  "nine_slice_reconstruction": "PASS",
+  "selection_changes_only_first_two_menu_rows": "PASS",
+  "preview_canvas_1920x1080": "PASS",
+  "GRUB_VM_and_hardware": "NOT RUN"
+}

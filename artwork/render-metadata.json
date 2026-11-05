@@ -1,0 +1,11 @@
+{
+  "font_source_name": "GNU Unifont Regular 16",
+  "font_size": 16,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "outside_menu_mean_absolute_channel_difference": 2.490895488781877,
+  "outside_menu_changed_pixel_fraction": 0.853013894638979,
+  "note": "AI edit is not pixel-identical outside the menu. Preview is a software layout simulation, not GRUB."
+}

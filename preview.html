@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi"><meta charset="utf-8"><title>EVA-ROS — Phase 2 preview</title>
+<style>
+body{margin:0;background:#090b10;color:#e3e4e8;font:16px system-ui}main{max-width:1670px;margin:auto}
+nav{display:flex;gap:12px;align-items:center;padding:16px;flex-wrap:wrap}select,button{background:#20232b;color:white;border:1px solid #666;padding:9px;border-radius:5px}p{padding:0 16px;line-height:1.6}img{width:100%;height:auto;display:block}
+</style>
+<main><nav><strong>EVA-ROS • Phase 2</strong><select id="mode" aria-label="Chọn preview">
+<option value="preview-target-top">Bố cục yêu cầu — chọn Ubuntu</option>
+<option value="preview-target-windows">Bố cục yêu cầu — chọn Windows</option>
+<option value="preview-actual-top">Ví dụ nhiều mục — phần đầu</option>
+<option value="preview-actual-windows">Ví dụ nhiều mục — khi cuộn tới Windows</option>
+<option value="preview-layout-ubuntu">So bố cục 3 mục — chọn Ubuntu</option>
+<option value="preview-layout-windows">So bố cục 3 mục — chọn Windows</option>
+<option value="clean">Nền đã phục chế</option>
+<option value="reference">Ảnh duyệt gốc</option>
+</select></nav><p>Ảnh mô phỏng offline, chưa phải screenshot GRUB. Hai ảnh “so bố cục 3 mục” chỉ để so thiết kế; không thay đổi danh sách boot thật. Chưa cài lên hệ thống. Bố cục yêu cầu đặt Ubuntu, Windows, UEFI ở ba hàng đầu. Cần triển khai thứ tự/class ở giai đoạn GRUB; các mục phụ vẫn được giữ để cuộn tới. Các ảnh “ví dụ nhiều mục” phản ánh thứ tự cấu hình hiện tại, chưa đổi trên máy.</p>
+<img id="preview" src="artwork/preview-target-top.png?v=top-three" alt="EVA-ROS preview">
+<p>Font preview: GNU Unifont Regular 16 từ PF2 Ubuntu; tên font runtime chưa chốt. Độ phân giải khung preview 1920 × 1080; GFXMODE thật vẫn auto.</p></main>
+<script>
+document.getElementById('mode').addEventListener('change',e=>{
+const name=e.target.value;
+document.getElementById('preview').src=name==='clean'?'eva-ros/background.png':name==='reference'?'references/EVA-ROS-approved-reference.png':'artwork/'+name+'.png?v=top-three';
+});
+</script></html>

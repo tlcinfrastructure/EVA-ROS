@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+/config/local-machine.json
+/evidence/
+/work/
+/backups/
+/tests/results/*
+!/tests/results/.gitkeep
+*.log

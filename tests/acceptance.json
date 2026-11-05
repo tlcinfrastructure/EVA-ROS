@@ -1,0 +1,9 @@
+{
+  "grub_vm_passed": false,
+  "runtime_font_confirmed": false,
+  "layout_approved": false,
+  "windows_chainloader_reviewed": false,
+  "recovery_plan_ready": false,
+  "icon_classes_verified": false,
+  "menu_order_verified": false
+}

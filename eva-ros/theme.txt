@@ -1,0 +1,32 @@
+# EVA-ROS draft — flat Minegrub-style asset layout.
+# Phase 2: renderer/VM verification pending. Existing embedded font only.
+title-text: ""
+desktop-image: "background.png"
+desktop-image-scale-method: "padding"
+desktop-image-h-align: "center"
+desktop-image-v-align: "center"
+desktop-color: "#030406"
+terminal-left: "10%"
+terminal-top: "10%"
+terminal-width: "80%"
+terminal-height: "80%"
+
++ boot_menu {
+    left = 15.6%
+    top = 27.1%
+    width = 32.6%
+    height = 31.5%
+    item_font = "Unifont Regular 16"
+    selected_item_font = "Unifont Regular 16"
+    item_color = "#E4E6EA"
+    selected_item_color = "#FFFFFF"
+    icon_width = 56
+    icon_height = 56
+    item_height = 78
+    item_padding = 0
+    item_icon_space = 14
+    item_spacing = 40
+    item_pixmap_style = "item_*.png"
+    selected_item_pixmap_style = "selected_item_*.png"
+    scrollbar = false
+}
