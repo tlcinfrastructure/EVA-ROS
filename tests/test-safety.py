@@ -52,7 +52,7 @@ def main():
     assert changed.any() and not changed[~allowed].any()
     results['selection_changes_only_first_two_menu_rows']='PASS'
     results['preview_canvas_1920x1080']='PASS'
-    results['GRUB_VM_and_hardware']='NOT RUN'
+    results['GRUB_VM_and_hardware']='NOT RUN BY THIS SCRIPT'
     (ROOT/'tests/results/phase-2-static.json').write_text(json.dumps(results,indent=2)+'\n')
     print(json.dumps(results,indent=2))
 

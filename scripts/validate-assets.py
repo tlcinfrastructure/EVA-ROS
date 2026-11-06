@@ -7,6 +7,8 @@ import json, re
 root=Path(__file__).resolve().parents[1];theme=root/'eva-ros'
 def main():
     text=(theme/'theme.txt').read_text()
+    assert not re.search(r'\d+\.\d+%',text), 'GRUB coordinates must use integer percentages and offsets'
+    assert 'item_font = "GNU Unifont Regular 16"' in text
     assert len(re.findall(r'^\+ boot_menu\s*\{',text,re.M))==1
     assert Image.open(theme/'background.png').size==(1670,942)
     for prefix in ('item','selected_item'):
@@ -27,6 +29,6 @@ def main():
     metadata=json.loads((root/'artwork/render-metadata.json').read_text())
     print('PASS: background dimensions, 18 slices, 5 icons, paths, distinct selection states.')
     print('Offline font source:',metadata['font_source_name'])
-    print('NOT TESTED: GRUB renderer, accepted runtime font name, Secure Boot, scrolling, OS boot.')
+    print('SCOPE: static checks only; see phase-3-progress.md for separately executed VM tests.')
 
 if __name__=='__main__':main()

@@ -1,0 +1,22 @@
+{
+  "status": "partial_vm_tests_observed",
+  "framebuffer": [
+    1920,
+    1080
+  ],
+  "font": "GNU Unifont Regular 16",
+  "guest_shim_lock": "y",
+  "guest_lockdown": "y",
+  "render": true,
+  "selection_icons": true,
+  "eight_entry_scroll": true,
+  "submenu": true,
+  "editor_console_escape": true,
+  "windows_dummy_dispatch": true,
+  "real_os_boot_tested": false,
+  "native_generator_order_classes_tested": false,
+  "installer_end_to_end_tested": false,
+  "debug_all_run_guest_exception": "observed; cause unconfirmed",
+  "windows_chainloader_config_reviewed": true,
+  "independent_3_4_5_matrix": "PASS: screenshots visually inspected"
+}

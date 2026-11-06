@@ -2,7 +2,7 @@
 
 EVA-01 Dark theme draft for GRUB2, organized in a flat theme directory similar to Minegrub.
 
-**Status: Phase 2 complete for visual review; Phase 3 GRUB/VM testing has not started. Not a production-ready installer.** Installation apply remains gated. No bootloader binaries or firmware settings have been changed during development.
+**Status: Phase 2 complete for visual review; Phase 3 GRUB/VM rendering and interactions tested; integration testing remains pending. Not a production-ready installer.** Installation apply remains gated. No bootloader binaries or firmware settings have been changed during development.
 
 ![EVA-ROS preview](artwork/preview-target-top.png)
 
@@ -66,3 +66,7 @@ Machine diagnostics, filesystem UUIDs and private baseline hashes are deliberate
 ## Credits and licensing status
 
 See [THIRD_PARTY.md](THIRD_PARTY.md). This snapshot does not assign a blanket license to artwork, trademarks, fonts or all project code.
+
+## Phase 3 update — 2026-11-06
+
+[GRUB VM progress and limits](docs/phase-3-progress.md): real VM screenshots now available. This supersedes the earlier not-started status. Installation remains gated.
